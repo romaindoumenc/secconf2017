@@ -1,0 +1,11 @@
+p.qauthor {
+    color: gray;
+    font-size: 20px;
+    text-align: right;
+    padding-righ: 30px;
+}
+
+#logo {
+    border: white;
+    width: 120%;
+}
