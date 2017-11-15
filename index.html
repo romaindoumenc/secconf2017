@@ -68,8 +68,8 @@ if len(from) > 3071 {
 }
 
 // spec says: domain between "@" and "/" before normalization (§2.2)
-atloc := bytes.Index(from, []byte{0x40})
-slashloc := bytes.Index(from, []byte{0x2F})
+atloc := bytes.IndexRune(from, '@')
+slashloc := bytes.IndexRune(from, '/')
 dstart, dend := 0, len(from)
 
 // user not required (§2.1)
